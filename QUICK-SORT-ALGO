@@ -1,3 +1,5 @@
+for time and space complexity : https://iq.opengenus.org/time-and-space-complexity-of-quick-sort/
+
 
 let A = [10, 3, 8, 15, 6, 12, 2, 18, 7, 15, 14, 1, 1, 15667];
 let n = A.length;

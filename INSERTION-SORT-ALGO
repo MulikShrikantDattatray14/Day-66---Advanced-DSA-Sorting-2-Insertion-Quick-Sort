@@ -10,3 +10,9 @@ for (let i = 1; i < n; i++) {
     }
 }
 console.log(A)
+
+
+The worst case time complexity of Insertion sort is O(N^2)
+The average case time complexity of Insertion sort is O(N^2)
+The time complexity of the best case is O(N).
+The space complexity is O(1)
