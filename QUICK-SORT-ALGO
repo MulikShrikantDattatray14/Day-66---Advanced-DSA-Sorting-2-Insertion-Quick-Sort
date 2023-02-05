@@ -1,0 +1,45 @@
+
+let A = [10, 3, 8, 15, 6, 12, 2, 18, 7, 15, 14, 1, 1, 15667];
+let n = A.length;
+quicksort(A, 0, n - 1);
+
+function quicksort(A, start, end) {
+    if (start >= end) return;
+    let p = rearrange(A, start, end);
+    quicksort(A, start, p - 1);
+    quicksort(A, p + 1, end)
+}
+
+function rearrange(A, start, end) {
+    let left = start + 1;
+    let right = end;
+    while (left <= right) {
+
+        if (A[left] <= A[start]) {
+
+            left++;
+        }
+        else if (A[right] > A[start]) {
+
+            right--;
+        }
+        else {
+            let temp = A[left];
+            A[left] = A[right];
+            A[right] = temp;
+
+
+
+            left++;
+            right--;
+        }
+
+    }
+    let temp1 = A[start];
+    A[start] = A[left - 1];
+    A[left - 1] = temp1;
+    return (left - 1);
+
+}
+
+console.log(A)
